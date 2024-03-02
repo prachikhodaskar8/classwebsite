@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="ring">
+        <i style="--clr:#00ff0a;"></i>
+        <i style="--clr:#ff0057;"></i>
+        <i style="--clr:#fffd44;"></i>
+        <div class="login">
+          <form name="myForm" method="post" action="javascript:void(0);" onsubmit="return myfunction();">
+          <h2>Login</h2>
+          <div class="inputBx">
+            <input type="text" name="uname" class="inputText" placeholder="User Name">
+          </div>
+          <div class="inputBx">
+            <input type="password" name="pass" class="inputText" placeholder="Password">
+          </div>
+          <div class="inputBx">
+            <input type="submit" value="Sign in">
+          </div>
+          <div class="links">
+            <a href="#">Forget Password</a>
+            <a href="#">Signup</a>
+          </div>
+        </form>
+        </div>
+      </div>
+      <!--ring div ends here-->
+      <script type="text/javascript">
+        function myfunction() {
+        var un = document.forms["myForm"]["uname"].value;
+        var pw = document.forms["myForm"]["pass"].value;
+        if (un == "prachikhodaskar8@gmail.com" && pw == "prachi8") {
+            window.location.href = "pro1.html"; // Replace "index.html" with the desired URL
+            return false; // Prevent the form from submitting
+        } else {
+            alert("Invalid Username and Password");
+            return false; // Prevent the form from submitting
+        }
+    }
+      </script>
+</body>
+</html>
